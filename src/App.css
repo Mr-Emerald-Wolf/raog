@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color: #282c34;
+  backdrop-filter: saturate(180%) blur(10px);
+  color: #D3D3D3;
+}
+
+.background-anime{
+  color: rgba(255,255,255,0.9);
+  background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+  background-size: 600%;
+  animation: anime 10s linear infinite;
+}
+
+@keyframes anime{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.lighten{
+  box-shadow: inset 0em 0em 0em 100em rgba(255, 255, 255, 0.25);
+}
+
+.markdowninput{
+    background: #ffffff;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+    color: #141414;
+}
+
+.textarea {
+  resize: none;
+  font-size: 17px;
+  padding: 20px;
+  font-family: system-ui;
+  border: none;
+  background-color: #e8e8e8;
+  color: #141414;
+  border-radius: 3px;
+}
+
+.textarea::selection {
+  background: #141414;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border-radius: 10px;
+  border: 3px solid #b8b8b8;
+}
+
+.textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+
+.textarea:focus {
+  outline: none;
 }
