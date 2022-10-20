@@ -11,7 +11,7 @@ export default function Navbar() {
     <h1 class="text-5xl font-extrabold cursor-default bg-clip-text " href="#">RaOG</h1>
   </li>
   <li class="mr-3">
-    <a href='https://discord.gg/wbnQSqwW' target="_blank">
+    <a href='https://discord.gg/wbnQSqwW' target="_blank" rel="noopener noreferrer">
   <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384f934b806f37f4956_145dc557845548a36a82337912ca3ac5.svg" width = "55" height = "40" loading="lazy" alt="Discord"/>  
   </a>
   </li>

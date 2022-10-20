@@ -111,3 +111,8 @@ body{
 .textarea:focus {
   outline: none;
 }
+
+.container{
+  display: flex;
+  width: 100%;
+}

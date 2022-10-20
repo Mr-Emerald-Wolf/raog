@@ -1,13 +1,12 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
+
 
 export default function Converter() {
-  const [copySuccess, setCopySuccess] = useState('');
   const textAreaRef = useRef(null);
   function copyToClipboard(e) {
     textAreaRef.current.select();
     document.execCommand('copy');
     e.target.focus();
-    setCopySuccess('Copied!');
   };
   return (
     <>
@@ -38,7 +37,6 @@ export default function Converter() {
       ></textarea></div>
 
       </div>
-
 
     </>
     
