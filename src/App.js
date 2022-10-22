@@ -1,10 +1,21 @@
 import React from 'react';
 import './App.css';
-import Landing from './components/Landing';
+import Navbar from './components/Navbar';
+import Converter from './components/Converter';
+import Markup from './components/Markdown';
 
 function App() {
   return (
-    <Landing/>
+    <>
+        <div class = "background-anime backdrop-blur-3xl lighten"
+        style={{ 
+          height: `100vh`,backgroundSize: `600%`, backdropFilter: `blur(60%)`
+    }}>
+    <Navbar/>
+    <Converter/>
+    <Markup/>
+        </div>
+    </>
   );
 }
 
